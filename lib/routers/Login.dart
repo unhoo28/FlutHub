@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'LoginForm.dart';
+import '../widgets/LoginForm.dart';
 
 class Login extends StatefulWidget {
   @override
@@ -10,6 +10,7 @@ class Login extends StatefulWidget {
 class LoginState extends State {
   @override
   Widget build(BuildContext context) {
+    ThemeData theme = Theme.of(context);
     return Scaffold(
         backgroundColor: Color(0xFF303F9F),
         body: Container(
@@ -27,7 +28,7 @@ class LoginState extends State {
             children: <Widget>[
               Container(
                 decoration: BoxDecoration(
-                    color: Color(0xFF2962FF),
+                    color: theme.accentColor,
                     borderRadius: BorderRadius.only(
                         topLeft: Radius.circular(2),
                         topRight: Radius.circular(2))),

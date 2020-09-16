@@ -1,3 +1,4 @@
+import 'package:fasthub/widgets/Empty.dart';
 import 'package:flutter/material.dart';
 
 class SearchWidget extends StatefulWidget {
@@ -15,7 +16,6 @@ class SearchWidgetState extends State {
         elevation: 3,
         leading: IconButton(
           icon: Icon(Icons.arrow_back),
-          color: Colors.black,
           onPressed: () {
             Navigator.pop(context);
           },
@@ -28,15 +28,10 @@ class SearchWidgetState extends State {
                   hintText: "Search", border: InputBorder.none)),
         ),
         actions: <Widget>[
-          IconButton(
-              icon: Icon(
-                Icons.search,
-                color: Colors.black,
-              ),
-              onPressed: null)
+          IconButton(icon: Icon(Icons.search), onPressed: null)
         ],
-        backgroundColor: Colors.white,
       ),
+      body: EmptyWidget("No search results", false, null),
     );
   }
 }
