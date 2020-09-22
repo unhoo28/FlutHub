@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class FasthubIcons {
+class IconsProvider {
   static const IconData github = const IconData(
     0xe601,
     fontFamily: "iconfont",

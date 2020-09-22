@@ -1,6 +1,5 @@
+import 'package:fasthub/fastaccess/ui/widgets/Empty.dart';
 import 'package:flutter/material.dart';
-
-import 'Empty.dart';
 
 class PullRequestsWidget extends StatelessWidget {
   @override

@@ -1,4 +1,4 @@
-import 'package:fasthub/widgets/Empty.dart';
+import 'package:fasthub/fastaccess/ui/widgets/Empty.dart';
 import 'package:flutter/material.dart';
 
 class SearchWidget extends StatefulWidget {

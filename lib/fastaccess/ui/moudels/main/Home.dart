@@ -1,10 +1,10 @@
-import 'package:fasthub/FasthubIcons.dart';
+import 'package:fasthub/fastaccess/provider/icons/IconsProvider.dart';
 import 'package:flutter/material.dart';
-import 'Search.dart';
-import '../widgets/Feeds.dart';
-import '../widgets/Issues.dart';
-import '../widgets/PullRequests.dart';
-import '../widgets/Drawer.dart';
+import '../search/Search.dart';
+import '../feed/Feeds.dart';
+import 'issues/Issues.dart';
+import 'pullrequests/PullRequests.dart';
+import 'Drawer.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -61,15 +61,15 @@ class HomeState extends State {
       bottomNavigationBar: BottomNavigationBar(
         items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
-            icon: Icon(FasthubIcons.github),
+            icon: Icon(IconsProvider.github),
             title: Text("Feeds"),
           ),
           BottomNavigationBarItem(
-            icon: Icon(FasthubIcons.issues),
+            icon: Icon(IconsProvider.issues),
             title: Text("Issues"),
           ),
           BottomNavigationBarItem(
-            icon: Icon(FasthubIcons.pr),
+            icon: Icon(IconsProvider.pr),
             title: Text("Pull Requests"),
           )
         ],

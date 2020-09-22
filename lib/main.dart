@@ -1,5 +1,5 @@
-import 'package:fasthub/routers/Home.dart';
-import 'package:fasthub/routers/Login.dart';
+import 'package:fasthub/fastaccess/ui/moudels/main/Home.dart';
+import 'package:fasthub/fastaccess/ui/moudels/login/Login.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 

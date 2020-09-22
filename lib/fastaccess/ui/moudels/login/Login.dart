@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../widgets/LoginForm.dart';
+import 'LoginForm.dart';
 
 class Login extends StatefulWidget {
   @override
@@ -131,6 +131,7 @@ class LoginState extends State {
                             child: Container(
                               alignment: Alignment.center,
                               child: FlatButton(
+                                onPressed: null,
                                 child: Text(
                                   "Enterprise",
                                   style: TextStyle(
@@ -165,6 +166,7 @@ class LoginState extends State {
                     Container(
                       margin: EdgeInsets.fromLTRB(0, 0, 0, 20),
                       child: FlatButton(
+                        onPressed: null,
                         child: Text(
                           "OPEN IN BROWSER",
                           style:
