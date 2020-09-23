@@ -1,5 +1,5 @@
 import 'package:fasthub/fastaccess/ui/moudels/main/Home.dart';
-import 'package:fasthub/fastaccess/ui/moudels/login/Login.dart';
+import 'package:fasthub/fastaccess/ui/moudels/login/LoginView.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -39,7 +39,7 @@ class FastHubState extends State<FastHubApp> {
           visualDensity: VisualDensity.adaptivePlatformDensity,
           scaffoldBackgroundColor: Color(0XFFFAFAFA)),
       debugShowCheckedModeBanner: false,
-      home: _login ? Home() : Login(),
+      home: _login ? Home() : LoginView(),
     );
   }
 }

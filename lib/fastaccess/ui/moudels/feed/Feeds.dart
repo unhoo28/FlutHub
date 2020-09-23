@@ -9,7 +9,7 @@ class FeedsWidget extends StatefulWidget {
 }
 
 class FeedsWidgetState extends State {
-  final GlobalKey<RefreshIndicatorState> _refreshIndicatorKey = new GlobalKey();
+  final GlobalKey<RefreshIndicatorState> _refreshIndicatorKey = GlobalKey();
   bool _loading = false;
   Future<void> _onRefresh() async {
     setState(() {

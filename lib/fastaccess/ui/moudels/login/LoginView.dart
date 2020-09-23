@@ -1,13 +1,14 @@
+import 'package:fasthub/fastaccess/ui/moudels/login/LoginMvp.dart';
 import 'package:flutter/material.dart';
 
 import 'LoginForm.dart';
 
-class Login extends StatefulWidget {
+class LoginView extends StatefulWidget {
   @override
-  State<StatefulWidget> createState() => LoginState();
+  State<StatefulWidget> createState() => LoginViewState();
 }
 
-class LoginState extends State {
+class LoginViewState extends State implements View {
   @override
   Widget build(BuildContext context) {
     ThemeData theme = Theme.of(context);
@@ -180,5 +181,67 @@ class LoginState extends State {
             ],
           ),
         ));
+  }
+
+  @override
+  bool isEnterprise() {
+    // TODO: implement isEnterprise
+    throw UnimplementedError();
+  }
+
+  @override
+  bool isLoggedIn() {
+    // TODO: implement isLoggedIn
+    throw UnimplementedError();
+  }
+
+  @override
+  void onEmptyEndpoint(bool isEmpty) {
+    // TODO: implement onEmptyEndpoint
+  }
+
+  @override
+  void onEmptyPassword(bool isEmpty) {
+    // TODO: implement onEmptyPassword
+  }
+
+  @override
+  void onEmptyUserName(bool isEmpty) {
+    // TODO: implement onEmptyUserName
+  }
+
+  @override
+  void onLogoutPressed() {
+    // TODO: implement onLogoutPressed
+  }
+
+  @override
+  void onOpenSettings() {
+    // TODO: implement onOpenSettings
+  }
+
+  @override
+  void onOpenUrlInBrowser() {
+    // TODO: implement onOpenUrlInBrowser
+  }
+
+  @override
+  void onRequire2Fa() {
+    // TODO: implement onRequire2Fa
+  }
+
+  @override
+  void onRequireLogin() {
+    // TODO: implement onRequireLogin
+  }
+
+  @override
+  void onSuccessfullyLoggedIn(bool extraLogin) {
+    // TODO: implement onSuccessfullyLoggedIn
+  }
+
+  @override
+  void onThemeChanged() {
+    // TODO: implement onThemeChanged
   }
 }

@@ -1,3 +1,4 @@
+import 'package:fasthub/fastaccess/ui/moudels/login/LoginPresenter.dart';
 import 'package:flutter/material.dart';
 
 class LoginForm extends StatefulWidget {
@@ -15,12 +16,18 @@ class LoginFormState extends State {
   LoginFormState({Key key, @required this.loginType}) : super();
 
   final LoginType loginType;
+  final LoginPresenter presenter = LoginPresenter();
 
-  final TextEditingController _usernameController = new TextEditingController();
-  final TextEditingController _passwordController = new TextEditingController();
-  final TextEditingController _tokenController = new TextEditingController();
+  final TextEditingController _usernameController = TextEditingController();
+  final TextEditingController _passwordController = TextEditingController();
+  final TextEditingController _tokenController = TextEditingController();
 
-  void _login() {}
+  bool basicAuth = false;
+
+  void doLogin() {
+    presenter.login(
+        _usernameController.text, _passwordController.text, "", basicAuth, "");
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -97,7 +104,7 @@ class LoginFormState extends State {
                       Container(
                         margin: EdgeInsets.all(16),
                         child: FloatingActionButton(
-                          onPressed: () => _login(),
+                          onPressed: () => doLogin(),
                           backgroundColor: _theme.accentColor,
                           child: Icon(Icons.send),
                         ),
